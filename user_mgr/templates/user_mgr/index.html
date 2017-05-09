@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}Welcome{% endblock title %}
+
+{% block inner_content %}
+
+
+  <div id="intro" class="box">
+    <div id="introleft">
+      <h1><span class="hlalt">AFFORDABLE</span><br />
+        WEB HOSTING</h1>
+      <p>STARTING FROM ONLY: &pound;1.99</p>
+      <ul class="btns">
+        <li><a href="#">ORDER NOW</a></li>
+        <li class="alt"><a href="#">FIND OUT MORE</a></li>
+      </ul>
+    </div>
+    <ul id="introlist">
+      <li class="listheading">Web hosting packages include the following:</li>
+      <li><img src="{% static 'SwitchNet/images/icon_webspace.png' %}" alt="" />5Gb of Web Space</li>
+      <li><img src="{% static 'SwitchNet/images/icon_wb.png' %}" alt="" />Free Website Builder</li>
+      <li><img src="{% static 'SwitchNet/images/icon_datatransfer.png' %}" alt="" />Unlimited Data Transfer</li>
+      <li><img src="{% static 'SwitchNet/images/icon_email.png' %}" alt="" />1,000 1Gb Email Accounts</li>
+      <li><img src="{% static 'SwitchNet/images/icon_db.png' %}" alt="" />10 MySQL Databases</li>
+      <li><img src="{% static 'SwitchNet/images/icon_cp.png' %}" alt="" />Powerful Control Panel</li>
+      <li><img src="{% static 'SwitchNet/images/icon_support.png' %}" alt="" />24x7x365 Support</li>
+      <li><img src="{% static 'SwitchNet/images/icon_instant.png' %}" alt="" />Instant Account Activation</li>
+      <li><img src="{% static 'SwitchNet/images/icon_virus.png' %}" alt="" />Virus Scanning</li>
+      <li><img src="{% static 'SwitchNet/images/icon_ruby.png' %}" alt="" />PHP5 - Ruby/Rails - Perl</li>
+      <li><img src="{% static 'SwitchNet/images/icon_cancel.png' %}" alt="" />Cancel Anytime</li>
+      <li><img src="{% static 'SwitchNet/images/icon_moneyback.png' %}" alt="" />Money Back Guarantee</li>
+    </ul>
+  </div>
+  <div id="fpdomains" class="box">
+    <h3>Domain Names</h3>
+    <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+    <ul>
+      <li>
+        <p class="left">.co.uk</p>
+        <p class="right">&pound;2.99</p>
+      </li>
+      <li>
+        <p class="left">.com</p>
+        <p class="right">&pound;8.99</p>
+      </li>
+      <li>
+        <p class="left">.eu</p>
+        <p class="right">&pound;8.99</p>
+      </li>
+    </ul>
+    <p class="desc">Lorem ipsum dolor sit amet, consectetuer.</p>
+    <div id="fpsearch">
+      <form method="get" action="#">
+        <input type="text" class="fpsearchbox" value="www." onclick="this.value=''" name="domain" />
+        <input type="image" src="{% static 'SwitchNet/images/btn_fpsearch.png' %}" class="fpbtnsearch" />
+      </form>
+    </div>
+  </div>
+  <div id="wbp" class="box">
+    <div id="wbpright">
+      <div class="pricebox">
+        <p>ONLY</p>
+        <p class="big">&pound;29.99 </p>
+        <p>PER YEAR</p>
+      </div>
+      <ul class="btns">
+        <li><a href="#">ORDER NOW&nbsp; </a></li>
+      </ul>
+    </div>
+    <img src="{% static 'SwitchNet/images/fp_wbp.jpg' %}" alt="" />
+    <h3>Website Builder Plus</h3>
+    <p><strong>Get a professional looking website in minutes</strong></p>
+    <ul id="wbplist">
+      <li>UNLIMITED pages</li>
+      <li>Forums, galleries &amp; blogs</li>
+      <li>UNLIMITED updates</li>
+      <li>E-commerce shops</li>
+      <li>Over 500 templates</li>
+      <li>Instant online setup</li>
+    </ul>
+  </div>
+  <div id="wwh" class="box">
+    <h3>Windows Web Hosting</h3>
+    <p>Lorem ipsum dolor sit amet, consectetuer Lorem ipsum.<br />
+      <strong>Prices start from as little as &pound;5.99 per month</strong></p>
+    <ul class="btns">
+      <li><a href="#">VIEW PLANS</a></li>
+      <li class="alt"><a href="#">FIND OUT MORE</a></li>
+    </ul>
+  </div>
+  <div id="newsbox" class="box">
+    <h3>Hosting News</h3>
+    <p>Catch the latest web hosting industry news here...</p>
+    <ul>
+      <li>
+        <p class="date"> <span class="day">05</span><br />
+          <span class="month">NOV</span> </p>
+        <h4><a href="#">News Title Here</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+      </li>
+      <li>
+        <p class="date"> <span class="day">03</span><br />
+          <span class="month">NOV</span> </p>
+        <h4><a href="#">News Title Here</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+      </li>
+    </ul>
+  </div>
+  <div id="scripts" class="box">
+    <h3>1-Click Installs</h3>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
+    <img src="{% static 'SwitchNet/images/fp_scripts.png' %}" alt="" />
+    <p><strong>With select hosting packages.</strong></p>
+    <ul class="btns">
+      <li><a href="#">VIEW PLANS</a></li>
+    </ul>
+  </div>
+  <div id="reviews" class="box">
+    <h3>Customer Testimonials</h3>
+    <p>We have many happy customers</p>
+    <ul>
+      <li>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nie...<br />
+          <span class="hl"><strong>Mr Roberts, Birmingham</strong></span></p>
+      </li>
+      <li class="none">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nie...<br />
+          <span class="hl"><strong>Mrs Robinson, Leeds</strong></span></p>
+      </li>
+    </ul>
+  </div>
+  <div style="clear:both;"></div>
+
+
+{% endblock inner_content %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block links %}<link href="{% static 'SwitchNet/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />{% endblock links%}
+{% block title %}Create Account{% endblock title %}
+
+{% block inner_content %}
+    <a href = "{% url 'user_mgr:index' %}"><h1>Home</h1></a>
+    <h2>Get shit done</h2>
+    <hr>
+    {% if messages %}
+        {% for msg in messages %}
+            <p>{{msg}}</p>
+        {% endfor %}
+    {% endif %}
+
+    <div>
+        <a href="{% url 'user_mgr:register' %}"><b>Register Here</b></a>
+    </div>
+    <br>
+    <div>
+        <a href="{% url 'user_mgr:login' %}"><b>Log in Here</b></a> 
+    </div>
+    <br>
+
+    {% if reg_form %}
+        <form method="post" action="">
+            {% csrf_token %}
+            {{ reg_form.as_p }}
+        <input type = "submit", value="Submit" class="btn">
+        </form>
+        {% elif login_form %}
+        <form method="post" action="">
+            {% csrf_token %}
+            {{ login_form.as_p }}
+            <input type = "submit", value="Submit" class="btn">
+        </form>
+    {% endif %} 
+  {% endblock inner_content %}
